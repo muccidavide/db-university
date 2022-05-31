@@ -1,0 +1,46 @@
+
+
+## University
+
+## Dipartimento:
+
+    id: PK NOTNULL INDEX UNIQUE AUTOINCREMENTAL INDEX
+    name: VARCHAR(50) NOTNULL UNIQUE
+    email: VARCHAR(50) NOTNULL UNIQUE
+    address: VARCHAR(100) NULL
+
+## Corso di Laurea:
+
+    id: PK NOTNULL INDEX UNIQUE AUTOINCREMENTAL INDEX
+    name: VARCHAR(50) NOTNULL
+    admission_number: SMALLINT NULL
+    description: VARCHAR(255) NULL
+
+## Teachers:
+
+    id: PK NOTNULL INDEX UNIQUE AUTOINCREMENTAL INDEX
+    first_name: VARCHAR(50) NOTNULL
+    last_name:  VARCHAR(50) NOTNULL
+    email: VARCHAR(50) NOTNULL UNIQUE
+    bio: VARCHAR(255) NULL
+
+
+## Exams:
+
+    id: PK NOTNULL INDEX UNIQUE AUTOINCREMENTAL INDEX
+    name: VARCHAR(255) NULL
+    date: DATATIME NULL
+
+## Students:
+
+    id: PK NOTNULL INDEX UNIQUE AUTOINCREMENTAL INDEX
+    first_name:  VARCHAR(50) NOTNULL
+    last_name:  VARCHAR(50) NOTNULL
+    email:  VARCHAR(50) NOTNULL UNIQUE
+    badge_nr:  VARCHAR(50) NOTNULL UNIQUE
+    admission_date: DATATIME NULL
+
+## Storico
+
+    id: PK NOTNULL INDEX UNIQUE AUTOINCREMENTAL INDEX
+    voto:  TINYINT NOTNULL
