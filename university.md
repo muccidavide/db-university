@@ -2,14 +2,14 @@
 
 ## University
 
-## Dipartimento:
+## Dipartiments:
 
     id: PK NOTNULL INDEX UNIQUE AUTOINCREMENTAL INDEX
     name: VARCHAR(50) NOTNULL UNIQUE
     email: VARCHAR(50) NOTNULL UNIQUE
     address: VARCHAR(100) NULL
 
-## Corso di Laurea:
+## Course:
 
     id: PK NOTNULL INDEX UNIQUE AUTOINCREMENTAL INDEX
     name: VARCHAR(50) NOTNULL
@@ -40,7 +40,7 @@
     badge_nr:  VARCHAR(50) NOTNULL UNIQUE
     admission_date: DATATIME NULL
 
-## Storico
+## Votes
 
     id: PK NOTNULL INDEX UNIQUE AUTOINCREMENTAL INDEX
     voto:  TINYINT NOTNULL
